@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}Details{% endblock %}
+
+{% block body %}
+  <div class="container">
+    <div class="row pt-4 rounded-pill" id="details">
+        <div class="col-md-8">
+          <div class="row">
+            <div class="col-md-8 col-sm-12">
+              <div class="jumbotron">
+                <div class="container">
+                  <h1 class="display-4">Book Details</h1>
+                  <p class="lead">ISBN: {{result.isbn}} </p>
+                  <p class="lead">Title: {{result.title}}</p>
+                  <p class="lead">Author: {{result.author}}</p>
+                  <p class="lead">Year: {{result.year}}</p>
+                </div>
+              </div>
+            </div>
+
+{% endblock %}
