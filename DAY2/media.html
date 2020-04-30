@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Web Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            @media (min-width: 500px) {
+                h1::before {
+                    content: "Welcome to my webpage!";
+                }
+                @media (max-width: 499px) {
+                    h1::before {
+                    content: "Welcome";
+                }
+                }
+            }
+        </style>
+        <style>
+            @media print {
+                .screen-only {
+                    display: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>this is a paragraph</p>
+        <p>this is a another paragraph</p>
+        <p class="screen-only">This is a third paragraph</p>
+    </body>
+</html>
